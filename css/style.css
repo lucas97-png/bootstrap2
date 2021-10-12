@@ -63,6 +63,28 @@ ul {
     color: #ffffff;
 }
 
+.btn-2 {
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all .5s ease;
+    box-shadow: var(--shadow-black-100);
+    font-weight: 500;
+}
+
+.btn-2:focus {
+    box-shadow: var(--shadow-black-100);
+}
+
+.btn-2:hover {
+    background-color: #ffffff;
+    color: var(--main-color);
+}
+
 @keyframes spin_01 {
     0% {
         transform: rotate(0deg);
@@ -369,20 +391,525 @@ ul {
 
 .fun-fact-item.style-1 {
     background-color: var(--color-1);
-    margin-left: 30px;
+   
 }
 
 .fun-fact-item.style-2 {
     background-color: var(--color-2);
-    margin-right: 30px;
+  
 }
 
 .fun-fact-item.style-3 {
     background-color: var(--color-3);
-    margin-left: 30px;
+    
 }
 
 .fun-fact-item.style-4 {
     background-color: var(--main-color);
-    margin-right: 30px;
+    
+}
+
+/* APP SS */
+
+.screenshot-item {
+    margin: 15px;
+}
+
+.screenshot-item img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+/* APP DOWNLOAD */
+
+.app-download {
+    background-image: url(/img/download-app-bg.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.app-download::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-to-dark-color);
+    opacity: 0.8;
+}
+
+.app-download .section-title h2 {
+    color: #ffffff;
+}
+
+.app-download-item {
+    background-color: var(--black-000);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow-black-100);
+    margin-top: 15px;
+}
+
+.app-download-item i {
+    font-size: 30px;
+    color: var(--main-color);
+    display: inline-block;
+}
+
+.app-download-item h3 {
+    font-size: 22px;
+    color: var(--black-900);
+    margin: 20px 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.app-download-item p {
+    font-size: 16px;
+    color: var(--black-400);
+    font-weight: 300;
+    margin: 0 0 30px;
+    line-height: 26px;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works-item {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.how-it-works-item.line-right::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 50%;
+    top: 75px;
+    background-color: var(--main-color);
+    z-index: -1;
+}
+
+.how-it-works-item .step {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: var(--main-color);
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 15px;
+}
+
+.how-it-works-item h3 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black-900);
+    text-transform: capitalize;
+}
+
+.how-it-works-item p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    color: var(--black-400);
+    line-height: 26px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    background-color: var(--black-100);
+}
+
+.testimonial-item {
+    margin: 15px;
+    padding: 30px;
+    box-shadow: var(--shadow-black-100);
+    text-align: center;
+}
+
+.testimonial-item .img-box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    position: relative;
+}
+.testimonial-item .img-box img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.testimonial-item .img-box i {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    left: calc(100% - 15px);
+    top: calc(50% -15px);
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    margin: 0 0 20px;
+    color: var(--black-400);
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.testimonial-item h3 {
+    font-size: 22px;
+    color: var(--black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.testimonial-item span {
+    display: block;
+    font-size: 16px;
+    color: var(--black-400);
+    font-weight: 300;
+}
+
+.testimonial-item .rating {
+    margin-top: 10px;
+}
+
+.testimonial-item .rating i {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--color-2);
+}
+
+/* PRICING */
+
+.pricing-plan {
+    box-shadow: var(--shadow-black-100);
+    border-radius: 10px;
+}
+
+.pricing-plan .pricing-header {
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--black-alpha-100);
+}
+
+.pricing-plan .pricing-header h3 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--black-900);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.pricing-plan .pricing-price {
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    line-height: 0.7;
+}
+
+.pricing-plan .pricing-price .currency {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    margin-right: 5px;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.pricing-plan .pricing-price .price {
+    font-weight: 700;
+    font-size: 80px;
+    color: var(--main-color);
+}
+
+.pricing-plan .pricing-price .period {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--black-400);
+    margin-right: 5px;
+    align-self: flex-end;
+    text-transform: uppercase;
+}
+
+.pricing-plan .pricing-body {
+    padding: 0 30px;
+}
+
+.pricing-plan .pricing-body ul li {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px solid var(--black-alpha-100);
+    line-height: 26px;
+    position: relative;
+}
+
+.pricing-plan .pricing-body ul li:last-child {
+    border: none;
+}
+
+.pricing-plan .pricing-body ul li i {
+    color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+
+.pricing-plan .pricing-footer {
+    padding: 20px 30px 30px;
+    text-align: center;
+}
+
+/* TEAM */
+
+.team {
+    background-color: var(--black-100);
+}
+
+.team-item {
+    margin: 15px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-black-100);
+}
+
+.team-item  h3 {
+    font-size: 18px;
+    color: var(--black-900);
+    font-weight: 500;
+    margin: 15px 0 8px;
+    text-transform: capitalize;
+}
+
+.team-item span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    text-transform: capitalize;
+}
+
+/* FAQ */
+
+.faq .accordion-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.faq .accordion-header {
+    box-shadow: var(--shadow-black-100);
+    padding: 20px 30px;
+    transition: all .5 ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq .accordion-header::before {
+    content: "\f067";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--black-400);
+}
+
+.faq .accordion-header:not(.collapsed) {
+    background-color: var(--main-color);
+}
+
+.faq .accordion-header:not(.collapsed)::before {
+    content: "\f068";
+    color: #ffffff;
+}
+
+.faq .accordion-header:not(.collapsed) h3 {
+    color: #ffffff;
+}
+
+.faq .accordion-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-400);
+    margin: 0;
+    transition: all .5 ease;
+    text-transform: capitalize;
+}
+.faq .accordion-body {
+    padding: 30px;
+    background-color: var(--black-100);
+}
+
+.faq .accordion-body p {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--black-400);
+    line-height: 26px;
+    margin: 0;
+}
+
+.contact {
+    background-color: var(--black-100);
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    color: var(--black-900);
+    font-weight: 500;
+    margin: 0 0 40px;
+}
+
+.contact-info-item  {
+    position: relative;
+    padding-left: 55px;
+    margin-top: 30px;
+}
+.contact-info-item i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        font-size: 16px;
+        color: var(--main-color);
+        text-align: center;
+        line-height: 38px;
+        border: 1px solid var(--main-color);
+}
+
+.contact-info-item h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: var(--black-900);
+}
+
+.contact-info-item p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    margin: 0;
+    line-height: 26px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form .form-control {
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 30px;
+    padding: 0 24px;
+    color: var(--black-900);
+    background-color: var(--black-000);
+    transition: all .5 ease;
+}
+
+.contact-form textarea.form-control {
+    height: 140px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--main-color);
+}
+
+.footer {
+    background-color: var(--main-color);
+    padding-top: 50px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 25px;
+    text-transform: capitalize;
+}
+
+.footer-col p{
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+}
+
+.footer-col ul {
+    margin: 0;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 300;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 5px;
+}
+
+.copy {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 300;
+    margin: 50px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .how-it-works-item.line-right::before {
+        display: none;
+    }
+    .home-img {
+        margin-top: 50px;
+    }
 }
